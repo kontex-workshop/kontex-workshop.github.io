@@ -498,7 +498,30 @@ a:hover {
     font-size: 15px;
     min-width: 150px;
 }
+/*new text */
+.timeline-date.deadline-update {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
+.timeline-date.deadline-update .old-date {
+    color: #888;
+    font-size: 0.95em;
+}
+
+.timeline-date.deadline-update .new-date {
+    color: #c0392b;
+    font-weight: 700;
+}
+
+.deadline-note {
+    display: inline-block;
+    margin-left: 8px;
+    color: #c0392b;
+    font-weight: 600;
+}
+/* new text ends */
 .timeline-content h4 {
     color: var(--primary-blue);
     margin-bottom: 0.3em;
@@ -694,6 +717,26 @@ a:hover {
     display: block;
     margin: 0 auto 1em;
     border: 3px solid var(--primary-green);
+}
+
+/* Program Committee */
+.program-committee {
+    padding-top: 40px;
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.committee-card h4 {
+    font-size: 1.05rem;
+}
+
+.committee-card .organizer-affiliation {
+    margin-bottom: 0;
+    line-height: 1.5;
 }
 
 /* ============================================
