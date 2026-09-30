@@ -648,7 +648,110 @@ a:hover {
 .note-box p:last-child {
     margin-bottom: 0;
 }
+/* ============================================
+   Programme Section
+   ============================================ */
 
+.program,
+.keynote-speaker {
+    padding: 80px 0;
+}
+
+.program {
+    background: var(--bg-light, #f7f9fb);
+}
+
+.program-session {
+    margin-top: 45px;
+}
+
+.program-session h3 {
+    color: var(--primary-blue, #1e5a96);
+    margin-bottom: 8px;
+}
+
+.session-description {
+    margin-bottom: 20px;
+    color: #5c6873;
+    font-style: italic;
+}
+
+.program-item {
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(30, 90, 150, 0.16);
+}
+
+.program-time {
+    color: var(--primary-blue, #1e5a96);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.program-content h4 {
+    margin: 0 0 6px;
+    color: var(--primary-blue, #1e5a96);
+}
+
+.program-content p {
+    margin: 4px 0;
+}
+
+.keynote-item {
+    border-left: 4px solid var(--primary-green, #4d9272);
+    padding-left: 16px;
+}
+
+.break-item,
+.transition-item {
+    color: #5c6873;
+}
+
+
+/* ============================================
+   Keynote Speaker Section
+   ============================================ */
+
+.speaker-profile {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 35px 0 45px;
+}
+
+.speaker-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary-green, #4d9272);
+}
+
+.speaker-summary h3 {
+    margin-bottom: 6px;
+    color: var(--primary-blue, #1e5a96);
+}
+
+.speaker-affiliation {
+    color: #5c6873;
+}
+
+.speaker-summary h4 {
+    max-width: 780px;
+    line-height: 1.5;
+}
+
+.speaker-details {
+    max-width: 950px;
+}
+
+.speaker-details h3 {
+    color: var(--primary-blue, #1e5a96);
+    margin-top: 35px;
+}
 /* ============================================
    Organizers Section
    ============================================ */
@@ -861,5 +964,26 @@ a:hover {
 
     .nav-menu {
         gap: 15px;
+    }
+
+    
+    @media (max-width: 768px) {
+    .program,
+    .keynote-speaker {
+        padding: 55px 0;
+    }
+
+    .program-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .speaker-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .speaker-image img {
+        margin: 0 auto;
     }
 }
