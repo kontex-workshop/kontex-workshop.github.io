@@ -709,19 +709,55 @@ a:hover {
     color: #5c6873;
 }
 
+.program-meta {
+    margin: 25px 0 35px;
+    padding: 20px 24px;
+    background: #ffffff;
+    border-left: 4px solid var(--primary-green, #4d9272);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.program-meta p {
+    margin: 6px 0;
+}
+
+.program-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--primary-blue, #1e5a96);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.program-link:hover,
+.program-link:focus {
+    text-decoration: underline;
+}
 
 /* ============================================
    Keynote Speaker Section
    ============================================ */
 
-.speaker-profile {
+/* .speaker-profile {
     display: grid;
     grid-template-columns: 190px 1fr;
     gap: 30px;
     align-items: center;
     margin: 35px 0 45px;
-}
+} */
 
+/* .speaker-profile {
+    display: block;
+    margin: 35px 0 45px;
+} */
+.speaker-profile {
+    display: block;
+    margin: 35px 0 45px;
+    padding: 24px 28px;
+    border-left: 4px solid var(--primary-green, #4d9272);
+    background: var(--bg-light, #f7f9fb);
+}
 .speaker-image img {
     width: 180px;
     height: 180px;
